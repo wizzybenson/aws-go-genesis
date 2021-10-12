@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    {{.Title|html}}
+</h1>
+<div>
+    {{printf "%s" .Body|html}}
+</div>
+<div>
+    <a href="/edit/{{.Title}}">Edit</a>
+</div>
+</body>
+</html>
